@@ -1,0 +1,43 @@
+.discovery-page {
+  width: min(
+    calc(100% - (var(--space-5) * 2)),
+    var(--content-max-width)
+  );
+  margin: 0 auto;
+  padding: var(--space-7) 0;
+}
+
+.discovery-page__header {
+  max-width: 640px;
+  margin-bottom: var(--space-7);
+}
+
+.discovery-page__eyebrow {
+  margin: 0 0 var(--space-2);
+
+  color: var(--color-primary);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.discovery-page__title {
+  margin: 0;
+
+  font-size: var(--font-size-2xl);
+  line-height: 1.2;
+}
+
+.discovery-page__description {
+  margin: var(--space-3) 0 0;
+
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.discovery-page__grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: var(--space-6);
+}
