@@ -1,3 +1,5 @@
+import Button from './components/ui/Button/Button'
+
 import './App.css'
 
 function App() {
@@ -5,9 +7,9 @@ function App() {
     <main className="app">
       <h1>Paws & Swipe</h1>
 
-      <p>
-        Find your new best friend.
-      </p>
+      <p>Find your new best friend.</p>
+
+      <Button>Discover pets</Button>
     </main>
   )
 }
