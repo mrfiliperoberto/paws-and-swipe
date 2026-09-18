@@ -1,23 +1,28 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import PetDetailsPage from './pages/PetDetails/PetDetailsPage'
+
+import AppLayout from './components/layout/AppLayout/AppLayout'
 import DiscoveryPage from './pages/Discovery/DiscoveryPage'
+import PetDetailsPage from './pages/PetDetails/PetDetailsPage'
 
 function App() {
   return (
     <Routes>
-      <Route
-        path="/"
-        element={<Navigate to="/discover" replace />}
-      />
+      <Route element={<AppLayout />}>
+        <Route
+          path="/"
+          element={<Navigate to="/discover" replace />}
+        />
 
-      <Route
-        path="/discover"
-        element={<DiscoveryPage />}
-      />
-      <Route
-        path="/pets/:petId"
-        element={<PetDetailsPage />}
-      />
+        <Route
+          path="/discover"
+          element={<DiscoveryPage />}
+        />
+
+        <Route
+          path="/pets/:petId"
+          element={<PetDetailsPage />}
+        />
+      </Route>
     </Routes>
   )
 }
