@@ -69,3 +69,17 @@
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
 }
+.pet-card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pet-card__link:hover {
+  color: var(--color-primary);
+}
+
+.pet-card__link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}

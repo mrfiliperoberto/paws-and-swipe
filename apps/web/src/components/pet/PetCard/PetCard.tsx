@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import type { Pet } from '../../../types/pet'
 
 import './PetCard.css'
@@ -18,7 +20,14 @@ function PetCard({ pet }: PetCardProps) {
       <div className="pet-card__content">
         <div className="pet-card__heading">
           <div>
-            <h2 className="pet-card__name">{pet.name}</h2>
+            <h2 className="pet-card__name">
+              <Link
+                className="pet-card__link"
+                to={`/pets/${pet.id}`}
+              >
+                {pet.name}
+              </Link>
+            </h2>
 
             <p className="pet-card__details">
               {pet.breed} · {pet.age} {pet.age === 1 ? 'year' : 'years'} old

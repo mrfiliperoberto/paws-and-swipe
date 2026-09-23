@@ -16,4 +16,9 @@ export interface Pet {
   distanceKm?: number
   imageUrl: string
   traits: string[]
+
+  description: string
+  shelterName: string
+  vaccinated: boolean
+  neutered: boolean
 }
