@@ -13,11 +13,12 @@ export const pets: Pet[] = [
     distanceKm: 3.2,
     imageUrl:
       'https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80',
-    traits: [
-      'Friendly',
-      'Vaccinated',
-      'Good with dogs',
-    ],
+    traits: ['Friendly', 'Vaccinated', 'Good with dogs'],
+    description:
+      'Luna is a gentle and affectionate dog who loves people, walks, and spending time with other dogs. She is looking for an active home where she can be part of the family.',
+    shelterName: 'Brighton Animal Rescue',
+    vaccinated: true,
+    neutered: true,
   },
   {
     id: 'pet-002',
@@ -31,11 +32,12 @@ export const pets: Pet[] = [
     distanceKm: 5.8,
     imageUrl:
       'https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=900&q=80',
-    traits: [
-      'Playful',
-      'Vaccinated',
-      'Indoor',
-    ],
+    traits: ['Playful', 'Vaccinated', 'Indoor'],
+    description:
+      'Milo is a curious and playful cat who enjoys exploring, relaxing by the window, and being close to people once he feels comfortable.',
+    shelterName: 'Brighton Animal Rescue',
+    vaccinated: true,
+    neutered: true,
   },
   {
     id: 'pet-003',
@@ -49,10 +51,11 @@ export const pets: Pet[] = [
     distanceKm: 8.1,
     imageUrl:
       'https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=900&q=80',
-    traits: [
-      'Calm',
-      'House trained',
-      'Good with children',
-    ],
+    traits: ['Calm', 'House trained', 'Good with children'],
+    description:
+      'Bailey is a calm and loyal companion who enjoys relaxed walks and spending time with people. She would thrive in a patient and loving home.',
+    shelterName: 'Hove Pet Rescue',
+    vaccinated: true,
+    neutered: true,
   },
 ]
